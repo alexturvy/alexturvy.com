@@ -1,0 +1,277 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#business-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 40%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  flex-basis: 25%;
+  max-height: 15vh;
+  margin-right: 15px;
+}
+
+.header-text {
+  flex-basis: 75%;
+  max-height: 15vh;
+  overflow: hidden;
+}
+
+.header-text h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.header-text h2 {
+  font-size: 1.25em;
+  margin: 0.5em 0;
+}
+
+.header-text h3 {
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1em 0;
+}
+
+nav a.my-work {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #cacaca;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a.my-work:hover {
+  color: #777;
+  background-color: #b1b1b1;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+  margin: 0 1em;
+}
+
+.social-icons a:hover {
+  color: #777;
+}
+
+.affiliations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.affiliations span {
+  margin-right: 0.5em;
+  font-size: 0.9em;
+}
+
+.affiliations a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+  margin: 0 0.5em;
+}
+
+.affiliations a:hover {
+  color: #777;
+  text-decoration: underline;
+}
+
+section#my-work {
+  width: 100%;
+  margin-top: 100vh;
+  text-align: left;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+section#my-work p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#my-work {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.work-section {
+  margin-bottom: 2rem;
+}
+
+.work-section h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.work-section p {
+  margin-left: 1.5rem;
+}
+
+.my-work-content {
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-work-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-work-content p,
+.my-work-content li {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.my-work-content ul {
+  padding-left: 1.5rem;
+}
+
+.my-work-content a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.my-work-content a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+  #business-card {
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .header-image {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .header-text h1 {
+    font-size: 1.3em;
+  }
+
+  .header-text h2 {
+    font-size: 1.1em;
+  }
+
+  .header-text h3 {
+    font-size: 0.9em;
+  }
+
+  nav a.my-work {
+    font-size: 1.1em;
+  }
+
+  .social-icons a {
+    font-size: 1em;
+  }
+
+  .affiliations span {
+    font-size: 0.8em;
+  }
+
+  .affiliations a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-text {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .header-text h1 {
+    font-size: 1.2em;
+  }
+  
+  .header-text h2 {
+    font-size: 1em;
+  }
+  
+  .header-text h3 {
+    font-size: 0.8em;
+  }
+}
