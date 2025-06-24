@@ -13,8 +13,9 @@ body {
 }
 
 .ffc-header {
-  width: 100%;
-  display: block;
+  width: 100%; /* This keeps the image spanning the full width */
+  max-height: 45vh; /* This limits the height to 45% of the viewport's height */
+  object-fit: cover; /* This prevents the image from being stretched or squished */
 }
 
 .ffc-main {
