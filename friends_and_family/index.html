@@ -6,42 +6,60 @@
   <title>Platformed Cultural Production – Friends & Family Version</title>
   <link rel="stylesheet" href="../styles.css">
   <style>
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      color: #181818;
+    }
     .ffc-header {
       width: 100%;
-      max-width: 900px;
+      max-width: 800px;
       display: block;
       margin: 2em auto 1.5em auto;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
     }
-    .ffc-container {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 1.5em;
+    .ffc-main {
+      max-width: 900px;
+      margin: 0 auto 2em auto;
+      display: flex;
+      gap: 2.5em;
+      align-items: flex-start;
+      padding: 0 1em;
+    }
+    .ffc-cartoon-col {
+      flex: 0 0 340px;
+      display: flex;
+      justify-content: center;
+    }
+    .ffc-cartoon {
+      max-width: 320px;
+      width: 100%;
+      border: 1.5px solid #222;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border-radius: 4px;
+      margin-top: 0.5em;
+    }
+    .ffc-text-col {
+      flex: 1 1 0;
+      min-width: 0;
     }
     .ffc-section-title {
       font-size: 2em;
-      font-weight: bold;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-      color: #2a3a4b;
+      font-weight: 700;
+      margin: 0 0 1em 0;
+      color: #222;
+      letter-spacing: -0.5px;
     }
-    .ffc-cartoon {
-      display: block;
-      margin: 2em auto 1.5em auto;
-      max-width: 350px;
-      width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background: #fafafa;
+    .ffc-text-col p {
+      font-size: 1.08em;
+      line-height: 1.6;
+      margin: 0 0 1.1em 0;
     }
     .ffc-download-btn {
       display: inline-block;
-      margin: 2em 0 0 0;
-      padding: 0.8em 1.6em;
+      margin: 2.5em 0 0 0;
+      padding: 0.9em 2em;
       background: #2a7ae2;
       color: #fff;
       font-size: 1.1em;
@@ -50,26 +68,56 @@
       border-radius: 6px;
       text-decoration: none;
       transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     }
     .ffc-download-btn:hover {
       background: #1a5bb8;
     }
+    @media (max-width: 900px) {
+      .ffc-main {
+        flex-direction: column;
+        gap: 1.5em;
+        align-items: stretch;
+      }
+      .ffc-cartoon-col {
+        justify-content: flex-start;
+        margin-bottom: 1em;
+      }
+      .ffc-cartoon {
+        margin: 0 auto 0 0;
+      }
+    }
     @media (max-width: 600px) {
-      .ffc-header { max-width: 100%; }
-      .ffc-container { padding: 0.5em; }
+      .ffc-header {
+        max-width: 100%;
+        margin: 1em auto 1em auto;
+      }
+      .ffc-main {
+        padding: 0 0.2em;
+      }
+      .ffc-section-title {
+        font-size: 1.3em;
+      }
+      .ffc-cartoon {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <img src="../images/friends-family-header.png" alt="Platformed Cultural Production: Constraints and Creativity in Memetic Practices on TikTok and Instagram" class="ffc-header">
-  <div class="ffc-container">
-    <h1 class="ffc-section-title">Why This Version Exists</h1>
-    <img src="../images/friends-family-cartoon.png" alt="xkcd-style cartoon about experts overestimating familiarity" class="ffc-cartoon">
-    <p>This is a version of my dissertation written for the people I care about — the ones who've asked me, patiently, what my research is about, who've listened to half-explained tangents about TikTok or Instagram or platform affordances, and who maybe aren't in the habit of reading academic work for fun.</p>
-    <p>It's not simplified. It's clarified. The big ideas are still here — about creativity, structure, culture, and power — but they're delivered in a way that respects your time and invites you in.</p>
-    <p>This project uses memes to explore how social media platforms really work — not just what features they offer, but how they shape what people make, how they're seen, and who gets to be heard. It's about TikTok and Instagram, yes — but also about the systems quietly shaping online culture.</p>
-    <p>The cartoon on this page captures something familiar: even when you're trying to be clear, it's easy to forget what other people <em>don't already know</em>. This document is my attempt to remember that — and to offer an explanation that makes sense, even if you've never used the word "meme" in a sentence with "cultural production." This is the version I hope you'll actually enjoy reading.</p>
-    <a href="../friends-family-version.pdf" class="ffc-download-btn" download>Download the Full PDF</a>
+  <div class="ffc-main">
+    <div class="ffc-cartoon-col">
+      <img src="../images/friends-family-cartoon.png" alt="xkcd-style cartoon about experts overestimating familiarity" class="ffc-cartoon">
+    </div>
+    <div class="ffc-text-col">
+      <h1 class="ffc-section-title">Why This Version Exists</h1>
+      <p>This is a version of my dissertation written for the people I care about — the ones who've asked me, patiently, what my research is about, who've listened to half-explained tangents about TikTok or Instagram or platform affordances, and who maybe aren't in the habit of reading academic work for fun.</p>
+      <p>It's not simplified. It's clarified. The big ideas are still here — about creativity, structure, culture, and power — but they're delivered in a way that respects your time and invites you in.</p>
+      <p>This project uses memes to explore how social media platforms really work — not just what features they offer, but how they shape what people make, how they're seen, and who gets to be heard. It's about TikTok and Instagram, yes — but also about the systems quietly shaping online culture.</p>
+      <p>The cartoon on this page captures something familiar: even when you're trying to be clear, it's easy to forget what other people <em>don't already know</em>. This document is my attempt to remember that — and to offer an explanation that makes sense, even if you've never used the word "meme" in a sentence with "cultural production." This is the version I hope you'll actually enjoy reading.</p>
+      <a href="../friends-family-version.pdf" class="ffc-download-btn" download>Download the Full PDF</a>
+    </div>
   </div>
 </body>
 </html> 
