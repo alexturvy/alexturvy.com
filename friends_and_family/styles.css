@@ -13,9 +13,12 @@ body {
 }
 
 .ffc-header {
-  width: 100%;
+  width: calc(100% + 2em);
+  margin-left: -1em;
+  margin-right: -1em;
   display: block;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .ffc-main {
@@ -71,6 +74,7 @@ body {
   display: inline-block;
   margin-top: 2em;
 }
+
 .my-work:hover {
   color: #777;
   background-color: #b1b1b1;
@@ -91,6 +95,11 @@ body {
   .ffc-cartoon {
     margin: 0 auto 0 0;
   }
+  .ffc-header {
+    width: calc(100% + 2em);
+    margin-left: -1em;
+    margin-right: -1em;
+  }
 }
 
 @media (max-width: 600px) {
@@ -102,5 +111,10 @@ body {
   }
   .ffc-cartoon {
     max-width: 100%;
+  }
+  .ffc-header {
+    width: calc(100% + 0.4em);
+    margin-left: -0.2em;
+    margin-right: -0.2em;
   }
 } 
