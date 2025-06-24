@@ -13,12 +13,8 @@ body {
 }
 
 .ffc-header {
-  width: calc(100% + 2em);
-  margin-left: -1em;
-  margin-right: -1em;
+  width: 100%;
   display: block;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .ffc-main {
@@ -63,6 +59,7 @@ body {
 }
 
 .my-work {
+  display: inline-block;
   text-decoration: none;
   color: #000;
   font-size: 1.2em;
@@ -71,8 +68,6 @@ body {
   padding: 6px 12px;
   border-radius: 20px;
   transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  display: inline-block;
-  margin-top: 2em;
 }
 
 .my-work:hover {
