@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   background: #fff;
@@ -12,6 +16,7 @@ body {
 
 .ffc-container {
   max-width: 1100px;
+  width: 100%;
   margin: 1.5em auto;
   padding: 0 1em;
 }
@@ -27,6 +32,7 @@ body {
   color: #222;
   margin: 0 0 0.5em 0;
   line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .ffc-header-subtitle {
@@ -35,6 +41,7 @@ body {
   color: #333;
   margin: 0 0 1em 0;
   line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .ffc-header-aka {
@@ -50,6 +57,7 @@ body {
 
 .ffc-main {
   display: flex;
+  flex-wrap: wrap;
   gap: 2em;
   align-items: center;
   margin-top: 0;
