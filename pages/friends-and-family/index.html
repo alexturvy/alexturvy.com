@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Platformed Cultural Production – Friends & Family Version</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    function scrollToAcknowledgements() {
+      const acknowledgementsElement = document.getElementById('acknowledgements');
+      window.scrollTo({
+        top: acknowledgementsElement.offsetTop - 20,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </head>
 <body>
   <img src="../images/friends-family-header.png" alt="Platformed Cultural Production: Constraints and Creativity in Memetic Practices on TikTok and Instagram" class="ffc-header">
@@ -19,9 +29,43 @@
         <p>It's not simplified. It's clarified. The big ideas are still here — about creativity, structure, culture, and power — but they're delivered in a way that respects your time and invites you in.</p>
         <p>This project uses memes to explore how social media platforms really work — not just what features they offer, but how they shape what people make, how they're seen, and who gets to be heard. It's about TikTok and Instagram, yes — but also about the systems quietly shaping online culture.</p>
         <p>The cartoon on this page captures something familiar: even when you're trying to be clear, it's easy to forget what other people <em>don't already know</em>. This document is my attempt to remember that — and to offer an explanation that makes sense, even if you've never used the word "meme" in a sentence with "cultural production." This is the version I hope you'll actually enjoy reading.</p>
-        <a href="../friends-family-version.pdf" class="my-work" download>Download the Full PDF</a>
+        <div class="button-container">
+          <a href="../friends-family-version.pdf" class="my-work" download>Download the Full PDF</a>
+          <a href="#acknowledgements" onclick="scrollToAcknowledgements()" class="my-work">Acknowledgements</a>
+        </div>
       </div>
     </div>
   </div>
+  
+  <section id="acknowledgements" class="acknowledgements-section">
+    <div class="ffc-container">
+      <h2 class="ffc-section-title">Acknowledgements</h2>
+      <div class="acknowledgements-content">
+        <p>This project took years — not just to research and write, but to carry alongside life. It never felt like the center of my world, and I think that's why I'm proud of it. It lived around the edges — at night, on weekends, during June's naps — and I owe so much to the people who made space for that to happen.</p>
+        
+        <p>First and always, to Devon — my wife, my partner, my clarity check. There's no version of this project, or this life, without you. You've read more drafts than anyone should ever have to. If it didn't make sense to you, it didn't make sense at all — and I trusted that completely. You carried the emotional weight, the family weight, the invisible weight of me working strange hours, being stuck or stressed or sometimes insufferable. Thank you for all of it.</p>
+        
+        <p>To our daughter, June — you've had no idea what I've been doing on the computer all this time, and I love that for you. Becoming your dad is the best thing I've ever done. This PhD was worth it for many reasons, but if nothing else, it gave me the chance to be home with you during your first years. You reminded me what actually matters, and clarified what I want — not just in a job, but in a life.</p>
+        
+        <p>To my mom — your support made this possible in every sense. You came to New Orleans again and again so I could write, and your steady presence gave me space to work and breathe. You've always led with love and generosity, always quick to ask what you can do for others. I've come to see more of myself in you over the years — our quirks, our tidiness obsession, our gift for noticing what people need. You've been a loving grandparent to June and a constant encouragement to me. I'm so grateful — and I see now how much you've shaped the way I show up in the world.</p>
+        
+        <p>To Kate — my sister, sounding board, and professional question-asker. You listened to more dissertation rambles than anyone else — Python, TikTok, whatever strange research method I was chasing that week — and always stayed curious without letting me get away with nonsense. I'm lucky to have you in my life.</p>
+        
+        <p>To my dad — thank you for laying the foundation. You celebrated every win, noticed every effort, and showed me that hard work and curiosity mattered. That belief has stayed with me.</p>
+        
+        <p>To Travon — thank you for letting me talk about TikTok more than anyone should have to endure, even if you never answered a single question. Watching you grow over these past few years has been one of the greatest joys of my life. I've never admired you more.</p>
+        
+        <p>To my wider family — Sharon and Guy, Brian and Stephanie, Derek and Steph, Mimi, Chol and Diann, FD and Robbie — thank you for listening to my ramblings, asking good questions, and letting me bring this weird world into your lives.</p>
+        
+        <p>To my Nana, who passed away in 2021 — you were the most joyful, generous person I've ever known. You were never in a rush. Whoever was in front of you got your full focus. You saw me begin this journey, and I know you would've been proud to see it end.</p>
+        
+        <p>To my sponsor, WH, and the people of Alcoholics Anonymous — getting sober during this process didn't just change my life; it gave me a new one. There is no place I've ever felt more at home than in a room full of people whose brains are broken in the same way as mine. The honesty, the laughter, the lightness — it saved me. To keep the gift, you have to give it away. I hope I can keep doing that.</p>
+        
+        <p>To St. Roch Community Church — you've been the heart of my New Orleans life. You held me through adulthood, supported me after June's birth, and gave me a place to be fully myself. I'll be looking for a church like you for the rest of my life.</p>
+        
+        <p>This dissertation may be "mine," but it was built on the time, trust, and care of many others. I hope this version helps show what your support helped make possible.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html> 
