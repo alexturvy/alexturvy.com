@@ -19,7 +19,7 @@ body {
 .ffc-header {
   width: 100%;
   height: auto;
-  max-height: 40vh;
+  max-height: 200px;
   object-fit: contain;
   margin-bottom: 1.5em;
   background: white;
@@ -35,16 +35,14 @@ body {
 }
 
 .ffc-cartoon-col {
-  flex: 0 0 auto;
+  flex: 0 0 300px;
   display: flex;
   justify-content: center;
-  min-width: 280px;
-  max-width: 340px;
 }
 
 .ffc-cartoon {
+  width: 295px;
   max-width: 100%;
-  width: 100%;
   height: auto;
   border: 1.5px solid #222;
   background: #fff;
@@ -111,47 +109,37 @@ body {
 }
 
 @media (max-width: 900px) {
-  .ffc-container {
-    margin: 1em auto;
-    padding: 0 1.5em;
-  }
   .ffc-main {
     flex-direction: column;
     gap: 1.5em;
     align-items: stretch;
   }
   .ffc-cartoon-col {
-    min-width: unset;
-    max-width: unset;
+    flex: none;
     justify-content: center;
     margin-bottom: 1em;
   }
   .ffc-cartoon {
-    max-width: 400px;
+    width: 250px;
     margin: 0 auto;
   }
   .ffc-header {
-    max-height: 30vh;
-    margin: 0 0 1em 0;
+    max-height: 150px;
   }
 }
 
 @media (max-width: 600px) {
   .ffc-container {
-    padding: 0 1em;
-  }
-  .ffc-main {
-    gap: 1em;
+    padding: 0 0.5em;
   }
   .ffc-section-title {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .ffc-cartoon {
-    max-width: 100%;
+    width: 200px;
   }
   .ffc-header {
-    max-height: 25vh;
-    margin: 0 0 1em 0;
+    max-height: 120px;
   }
   .button-container {
     flex-direction: column;
