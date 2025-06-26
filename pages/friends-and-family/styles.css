@@ -10,6 +10,9 @@ body {
   max-width: 900px;
   margin: 2em auto;
   padding: 0 1em;
+  min-height: calc(100vh - 4em);
+  display: flex;
+  flex-direction: column;
 }
 
 .ffc-header {
@@ -17,8 +20,9 @@ body {
   max-height: 45vh;
   object-fit: cover;
   margin-bottom: 1.5em;
-  background: white; /* Ensures background matches page */
-  mix-blend-mode: multiply; /* Blends the cream background with white */
+  background: white;
+  mix-blend-mode: multiply;
+  filter: contrast(1.2) brightness(1.1) saturate(1.1);
 }
 
 .ffc-main {
@@ -26,6 +30,8 @@ body {
   gap: 2.5em;
   align-items: flex-start;
   margin-top: 0;
+  flex: 1;
+  min-height: 0;
 }
 
 .ffc-cartoon-col {
@@ -46,6 +52,9 @@ body {
 .ffc-text-col {
   flex: 1 1 0;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ffc-section-title {
@@ -88,9 +97,11 @@ body {
 }
 
 .acknowledgements-section {
-  background-color: #f8f9fa;
+  background-color: white;
   margin-top: 3em;
   padding: 3em 0;
+  display: none;
+  border-top: 1px solid #e9ecef;
 }
 
 .acknowledgements-content p {
@@ -100,10 +111,15 @@ body {
 }
 
 @media (max-width: 900px) {
+  .ffc-container {
+    min-height: calc(100vh - 2em);
+    margin: 1em auto;
+  }
   .ffc-main {
     flex-direction: column;
     gap: 1.5em;
     align-items: stretch;
+    justify-content: flex-start;
   }
   .ffc-cartoon-col {
     justify-content: flex-start;
@@ -115,6 +131,9 @@ body {
   .ffc-header {
     width: 100%;
     margin: 0 0 1em 0;
+  }
+  .ffc-text-col {
+    justify-content: flex-start;
   }
 }
 
