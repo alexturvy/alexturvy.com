@@ -19,7 +19,7 @@ body {
 .ffc-header {
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 120px;
   object-fit: contain;
   margin-bottom: 1.5em;
   background: white;
@@ -30,7 +30,7 @@ body {
 .ffc-main {
   display: flex;
   gap: 2.5em;
-  align-items: flex-start;
+  align-items: stretch;
   margin-top: 0;
 }
 
@@ -47,12 +47,14 @@ body {
   border: 1.5px solid #222;
   background: #fff;
   border-radius: 4px;
-  margin-top: 0.5em;
 }
 
 .ffc-text-col {
   flex: 1 1 0;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .ffc-section-title {
@@ -117,14 +119,17 @@ body {
   .ffc-cartoon-col {
     flex: none;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
   .ffc-cartoon {
     width: 250px;
     margin: 0 auto;
   }
+  .ffc-text-col {
+    justify-content: flex-start;
+  }
   .ffc-header {
-    max-height: 150px;
+    max-height: 100px;
   }
 }
 
@@ -139,7 +144,7 @@ body {
     width: 200px;
   }
   .ffc-header {
-    max-height: 120px;
+    max-height: 80px;
   }
   .button-container {
     flex-direction: column;
