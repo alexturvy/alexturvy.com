@@ -13,17 +13,17 @@
     function scrollToAcknowledgements() {
       const acknowledgementsElement = document.getElementById('acknowledgements');
       
-      // Show the acknowledgements section
+      // Show the acknowledgements section first
       acknowledgementsElement.style.display = 'block';
       
       // Use setTimeout to ensure the display change is processed before scrolling
       setTimeout(() => {
-        acknowledgementsElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'nearest'
+        window.scrollTo({
+          top: acknowledgementsElement.offsetTop - 20,
+          left: 0,
+          behavior: 'smooth'
         });
-      }, 10);
+      }, 50);
     }
   </script>
 </head>
