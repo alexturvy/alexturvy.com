@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://alexturvy.com/sitemap.xml
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all assets
+Allow: /assets/
+Allow: /images/
+Allow: /styles/
+Allow: /pages/
