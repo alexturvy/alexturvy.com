@@ -49,20 +49,40 @@
         "https://twitter.com/soc_of_internet",
         "https://bsky.app/profile/alexturvy.bsky.social",
         "https://www.linkedin.com/in/alexturvy/",
-        "https://instagram.com/alexturvy"
+        "https://instagram.com/alexturvy",
+        "https://scholar.google.com/citations?user=deUlRRQAAAAJ",
+        "https://orcid.org/0000-0002-5610-7515"
       ],
       "jobTitle": "Media Sociologist and UX Researcher",
       "knowsAbout": [
-        "Media Sociology",
-        "UX Research", 
-        "Platform Studies",
-        "TikTok Research",
-        "Instagram Research",
-        "Digital Culture",
-        "Social Media Research",
-        "Memes",
-        "Cultural Production"
+        "TikTok",
+        "TikTok research",
+        "Instagram",
+        "Instagram research",
+        "platform studies",
+        "meme culture",
+        "memes",
+        "digital culture",
+        "social media research",
+        "content moderation",
+        "platform governance",
+        "UX research",
+        "creator economy",
+        "algorithmic curation",
+        "quantitative research",
+        "qualitative research",
+        "mixed-methods research"
       ],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "name": "PhD in Sociology"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Tulane University",
+        "url": "https://tulane.edu"
+      },
       "affiliation": [
         {
           "@type": "Organization",
@@ -70,14 +90,92 @@
           "url": "https://ccc.tulane.edu/"
         },
         {
-          "@type": "Organization", 
+          "@type": "Organization",
           "name": "TCRN",
           "url": "https://tiktokcultures.com/"
+        },
+        {
+          "@type": "Organization",
+          "name": "AoIR",
+          "url": "https://aoir.org/"
         }
       ]
     }
     </script>
-    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is social media bad for kids?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That framing assumes platforms are neutral tools that are either harmful or safe. I study something different: how platforms structure childhood and youth participation through design, governance, and the gaps communities fill. My research shows how TikTok governs young users through scaffolding, segmenting, and siloing. But formal governance often falls short, which is why my research examines 'patchwork governance' — how communities develop protective practices around internet-famous children when platform policies fail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is TikTok so addictive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "'Addiction' frames this as individual pathology, but what's actually interesting is how platforms structure participation differently. TikTok's recommendation system prioritizes algorithmic discovery — content can reach millions without an established audience. Instagram rewards audience maintenance and aesthetic consistency. I call this structured participation: the way platforms engineer the conditions of creativity through what's easy, visible, rewarding, and safe to post."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should TikTok be banned?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Platform restrictions often create the conditions they aim to prevent — pushing users toward less regulated alternatives while leaving underlying dynamics of algorithmic amplification and data collection unaddressed. My research focuses on how platforms govern through both constraint (what they remove) and reward (what they amplify). The ban debate often treats platforms as black boxes when the more useful question is how their systems actually work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do algorithms decide what I see?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Platforms communicate values publicly — safety, authenticity, quality — but their systems often optimize for something else. I distinguish four layers: stated values (explicit claims), latent values (implicit priorities in how policies are structured), enacted values (what moderation actually enforces), and revealed values (what algorithms reward with reach). When these layers diverge, the gap becomes visible, and consequential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do memes look different on TikTok versus Instagram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Platforms don't just host content — they structure participation differently. My research shows how TikTok and Instagram construct authenticity, creativity, and discovery in distinct ways. Users navigate these conditions through memetic negotiation — developing platform-specific vernaculars that balance individual expression with collective trends. When memes cross platforms, they undergo memetic translation: structural adjustment, semiotic recalibration, and cultural integration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does content moderation actually work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depends what you mean by 'work.' Platforms have improved at removing prohibited content. But removal is only half of governance; the other half is amplification. My work shows that recommendation systems can massively amplify content violating every stated policy — billions of views on content platforms claim to prohibit. Accountability focused only on removal misses where value is allocated: in what gets reach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can social media help communities solve problems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and that's underexplored in platform research. My article examines 'Look At This F*ckin' Street,' an Instagram account that transformed pothole complaints into infrastructure activism in New Orleans. Platforms aren't just spaces where culture happens or harm occurs — they enable new forms of collective action and civic engagement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you actually study this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mixed methods: discourse analysis of platform policies, systematic walkthroughs of interfaces and features, multimodal analysis of content, and quantitative analysis of platform-scale data like DSA transparency reports. A core principle is triangulation — testing interpretive claims against measurement and refining concepts when they don't hold. I serve as Key Regional Leader for North America in the TikTok Cultures Research Network."
+          }
+        }
+      ]
+    }
+    </script>
+
     <script>
         function scrollToMyWork() {
 			const myWorkElement = document.getElementById('my-work');
@@ -85,6 +183,15 @@
 
 			window.scrollTo({
 				top: myWorkElement.offsetTop - headerHeight,
+				left: 0,
+				behavior: 'smooth'
+  });
+}
+
+        function scrollToFAQ() {
+			const faqElement = document.getElementById('faq');
+			window.scrollTo({
+				top: faqElement.offsetTop,
 				left: 0,
 				behavior: 'smooth'
   });
@@ -100,7 +207,7 @@
                 <div class="header-text">
                     <h1>Alex Turvy, PhD</h1>
                     <h2>I'm a media sociologist and UX researcher</h2>
-                    <h3>I study how people socialize on TikTok and Instagram—and how platform design shapes those everyday moments. Despite what you might have heard, social media very much <i>is</i> real life.</h3>
+                    <h3>I study how people socialize on TikTok and Instagram—and how platform design shapes those everyday moments. Despite what you might have heard, social media very much <i>is</i> real life. <a href="#faq" onclick="scrollToFAQ()" class="subtle-link">Here's what I mean.</a></h3>
                 </div>
             </div>
             <nav>
@@ -134,12 +241,13 @@
 	Also, lots of fun stuff: how humor travels, how aesthetic norms evolve, and how users stretch the limits of platforms in playful, surprising, and sometimes subversive ways.</p>
 
     <h2>Ongoing Work</h2>
-    <p><i>(Last updated 9/18/2025)</i></p>
+    <p><i>(Last updated 1/27/2026)</i></p>
     <ul>
         <li>Book Manuscript (in progress): Memes in the Machine: Cultural Production on TikTok and Instagram</li>
         <li>Book Chapter (in progress): The Routledge Handbook of Influencer Activism and Advocacy — Media regulation, platform policy, and the conditions shaping influencer advocacy</li>
         <li>Book Chapter (in progress): The Routledge Handbook of Digital Privacy and Surveillance Throughout Life — Young influencers and the tensions between visibility, privacy, and platform labor</li>
-        <li>Under Review at <i>Journal of Computer-Mediated Communication</i>: Memes and Cultural Production: Structure, Agency, and Platform Vernaculars on TikTok and Instagram (in progress)</li>
+        <li>Under Review: What Platforms Reward: Agentic AI Accounts and Revealed Values on TikTok</li>
+        <li>Under Review: Enacted Values: Platform Governance Through Mandatory Disclosure</li>
     </ul>
      <h2>Publications</h2>
 		<h3>Peer-Reviewed Publications</h3>
@@ -179,6 +287,8 @@
 		</ul>
 	<h2>Media</h2>
 		<ul>
+			<li><a href="https://decrypt.co/348837/dead-internet-theory-gains-traction-ai-content-surges-online" target="_blank">Decrypt: Dead Internet Theory Gains Traction as AI Content Surges Online</a></li>
+			<li><a href="https://www.reuters.com/business/media-telecom/violence-racism-nazi-praise-dark-side-us-political-group-chats-2025-10-24/" target="_blank">Reuters: Violence, racism, and Nazi praise: The dark side of US political group chats</a></li>
 			<li><a href="https://nypost.com/2025/09/12/us-news/how-charlie-kirk-murder-bullet-casings-message-reveals-links-to-furry-subculture-and-online-trolls/" target="_blank">New York Post: How Charlie Kirk murder bullet casings message reveals links to furry subculture and online trolls</a></li>
 			<li><a href="https://www.lincolninst.edu/publications/land-lines-magazine/articles/of-potshots-and-potholes-social-media-and-urban-infrastructure/" target="_blank">Land Lines: Social Media and Urban Infrastructure</a></li>
 			<li><a href="https://www.latercera.com/mundo/noticia/luigi-mangione-el-antiheroe-que-polariza-a-eeuu/EOOHPO6G6ZEINHFTBSGTS7OUVI/" target="_blank">La Tercera: Luigi Mangione, the "antihero" who polarizes the US</a></li>
@@ -203,6 +313,43 @@
 	<h2>Experience</h2>
 		<p>All of the nitty-gritty is documented on my <a href="https://www.linkedin.com/in/alexturvy/" target="_blank">LinkedIn page</a>, but prior to my academic career I worked in K-12 education and operations. I have lots of experience with community-engaged work and with large-scale operations, financial and facilities management, project management, and event planning and execution.</p>
 </div>
+	</section>
+	<section id="faq">
+		<h1 class="section-title">FAQ</h1>
+		<div class="faq-content">
+			<details>
+				<summary>Is social media bad for kids?</summary>
+				<p>That framing assumes platforms are neutral tools that are either harmful or safe. I study something different: how platforms structure childhood and youth participation through design, governance, and the gaps communities fill. My research in the <em>International Journal of Cultural Studies</em> shows how TikTok governs young users through scaffolding, segmenting, and siloing — layering restrictions, categorizing content for different moderation treatment, and restricting features by age. But formal governance often falls short, which is why my research with Crystal Abidin in <em>Policy & Internet</em> examines "patchwork governance" — how communities develop protective practices around internet-famous children when platform policies fail. The question isn't whether platforms are bad — it's how they structure what's possible and who steps in when official systems don't.</p>
+			</details>
+			<details>
+				<summary>Why is TikTok so addictive?</summary>
+				<p>"Addiction" frames this as individual pathology, but what's actually interesting is how platforms structure participation differently. TikTok's recommendation system prioritizes algorithmic discovery — content can reach millions without an established audience. Instagram rewards audience maintenance and aesthetic consistency within existing networks. I call this structured participation: the way platforms engineer the conditions of creativity through what's easy, visible, rewarding, and safe to post. These aren't just technical differences; they shape what content gets made, what creators can succeed, and what "going viral" means. I study what platforms actually reward with reach, which often diverges from what they say they value.</p>
+			</details>
+			<details>
+				<summary>Should TikTok be banned?</summary>
+				<p>I wrote about this for <em>Tech Policy Press</em> with Rebecca Scharlach. Platform restrictions often create the conditions they aim to prevent — pushing users toward less regulated alternatives while leaving underlying dynamics of algorithmic amplification and data collection unaddressed. My research focuses on how platforms govern through both constraint (what they remove) and reward (what they amplify). That framework applies regardless of which company operates the platform or which country regulates it. The ban debate often treats platforms as black boxes when the more useful question is how their systems actually work.</p>
+			</details>
+			<details>
+				<summary>How do algorithms decide what I see?</summary>
+				<p>Platforms communicate values publicly — safety, authenticity, quality — but their systems often optimize for something else. I distinguish four layers: stated values (explicit claims), latent values (implicit priorities in how policies are structured), enacted values (what moderation actually enforces), and revealed values (what algorithms reward with reach). My research in the <em>International Journal of Cultural Studies</em> analyzed TikTok's community guidelines to surface latent values like positivity, proactivity, and precision — priorities that aren't explicitly stated but shape governance in practice. When these layers diverge — when algorithms amplify content that violates stated policies — the gap becomes visible, and consequential.</p>
+			</details>
+			<details>
+				<summary>Why do memes look different on TikTok versus Instagram?</summary>
+				<p>Because platforms don't just host content — they structure participation differently. My research in <em>Platforms & Society</em> shows how TikTok and Instagram construct authenticity, creativity, and discovery in distinct ways, producing different conditions for cultural production. Users navigate these conditions through what I call memetic negotiation — developing platform-specific vernaculars that balance individual expression with collective trends, authenticity with strategy, innovation with convention. When memes cross platforms, they undergo memetic translation: structural adjustment to new formats, semiotic recalibration to new audience expectations, and cultural integration into the receiving platform's norms. Form, meaning, and who can succeed all shift.</p>
+			</details>
+			<details>
+				<summary>Does content moderation actually work?</summary>
+				<p>Depends what you mean by "work." Platforms have improved at removing prohibited content — the enacted values layer. But removal is only half of governance; the other half is amplification. My work on revealed values shows that recommendation systems can massively amplify content violating every stated policy — billions of views on content platforms claim to prohibit. I'm analyzing EU Digital Services Act transparency data to examine what platforms actually enforce versus what they claim to prioritize. Accountability focused only on removal misses where value is allocated: in what gets reach.</p>
+			</details>
+			<details>
+				<summary>Can social media help communities solve problems?</summary>
+				<p>Yes — and that's underexplored in platform research. My article in <em>Social Media + Society</em> examines "Look At This F*ckin' Street," an Instagram account that transformed pothole complaints into infrastructure activism in New Orleans. Using multimodal discourse analysis, I show how the account combined visual documentation, humor, and platform affordances to create accountability pressure that actually got streets fixed. Platforms aren't just spaces where culture happens or harm occurs — they enable new forms of collective action and civic engagement. Understanding how requires the same attention to platform structure I bring to studying content moderation or meme circulation.</p>
+			</details>
+			<details>
+				<summary>How do you actually study this?</summary>
+				<p>Mixed methods: discourse analysis of platform policies, systematic walkthroughs of interfaces and features, multimodal analysis of content, and quantitative analysis of platform-scale data like DSA transparency reports. A core principle is triangulation — testing interpretive claims against measurement and refining concepts when they don't hold. I've published quantitative work in <em>JMIR</em> and my current projects analyze moderation patterns across platforms. I serve as Key Regional Leader for North America in the TikTok Cultures Research Network, building shared methodological resources for studying short-form video. My research has been cited in WIRED, Washington Post, Reuters, The Verge, and other outlets.</p>
+			</details>
+		</div>
 	</section>
 </body>
 </html>
