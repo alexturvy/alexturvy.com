@@ -360,3 +360,18 @@ section#faq .section-title {
     font-size: 0.85rem;
   }
 }
+
+.ongoing-work .work-meta {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+.ongoing-work .work-title {
+  font-weight: 600;
+}
+
+.ongoing-work .work-desc {
+  color: #555;
+}
